@@ -9,4 +9,9 @@ CliApellido varchar(30) not null,
 CliTelefono int not null,
 primary key(CliNumeroIdentificacion) 
 );
-
+/*TblLicencia creation*/
+create table TblLicencia(
+LicCodigo varchar(20) not null,
+LicTipo varchar(20) not null,
+LicVencimiento date not null
+);
