@@ -25,3 +25,4 @@ EleNombre varchar(20) not null,
 EleTipo varchar(20) not null,
 primary key(EleCodigo)
 );
+/*TblEncargado creation*/
