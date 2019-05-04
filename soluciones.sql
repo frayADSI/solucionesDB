@@ -15,3 +15,5 @@ LicCodigo varchar(20) not null,
 LicTipo varchar(20) not null,
 LicVencimiento date not null
 );
+alter table TblLicencia modify column
+LicCodigo varchar(20) not null primary key;
