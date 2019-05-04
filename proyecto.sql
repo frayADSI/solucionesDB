@@ -83,5 +83,12 @@ CREATE TABLE tblServicio_has_tblElemento(
     FOREIGN KEY(tblElemento_Elecodigo_fK) REFERENCES tblelemento(elecodigo)
 );
 
+/*next the creation of procedures*/
+USE proyecto;
+CREATE PROCEDURE ListEquType(tipo VARCHAR(20))
+SELECT equserial, equtipo,equmarca,equcondicion FROM tblequipo
+WHERE equtipo=tipo;
+
+
 
 
