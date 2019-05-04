@@ -89,6 +89,18 @@ CREATE PROCEDURE ListEquType(tipo VARCHAR(20))
 SELECT equserial, equtipo,equmarca,equcondicion FROM tblequipo
 WHERE equtipo=tipo;
 
+/*Next the creation of functions */
+USE proyecto;
 
-
-
+DELIMITER //
+CREATE FUNCTION contarClientes() RETURNS INT 
+READS SQL DATA
+DETERMINISTIC
+BEGIN
+DECLARE cantidad INT;
+SELECT count(*) INTO cantidad
+FROM tblcliente;
+RETURN cantidad;
+END
+//
+DELIMITER ;
