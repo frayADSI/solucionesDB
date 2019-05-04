@@ -17,3 +17,11 @@ LicVencimiento date not null
 );
 alter table TblLicencia modify column
 LicCodigo varchar(20) not null primary key;
+/*TblElemento creation*/
+create table TblElemento(
+EleCodigo varchar(20) not null,
+EleCantidad int not null,
+EleNombre varchar(20) not null,
+EleTipo varchar(20) not null,
+primary key(EleCodigo)
+);
